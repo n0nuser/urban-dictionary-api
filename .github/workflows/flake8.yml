@@ -1,0 +1,11 @@
+name: Check Python Style
+
+on: [push, pull_request]
+
+jobs:
+  Check-Python-Style:
+    runs-on: ubuntu-latest
+    steps:
+      - name: wemake-python-styleguide
+        uses: wemake-services/wemake-python-styleguide@0.16.1
+
